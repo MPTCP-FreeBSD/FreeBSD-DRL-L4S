@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/csh
 #
 # Copy the config files onto each VM, 
 #

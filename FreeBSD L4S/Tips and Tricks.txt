@@ -1,0 +1,45 @@
+While instaling FreeBSD, do UFS DIsk instalation, it is second option. Auto (UFS) partitioning automatically sets up the disk partitions using the UFS file system.
+Type wheel in login group - Invite user into other groups? - Additional groups to which the user will be added as a member. If the user needs administrative access, type wheel here.
+------------------------------------------------------------------------------------------
+dos2unix corrects formatting error
+find ./confs/ -type f -exec dos2unix {} \;
+find ./ -type f -exec dos2unix {} \;
+------------------------------------------------------------------------------------------
+
+Enable ECN for test1
+sysctl net.inet.tcp.ecn.enable=1
+
+
+tcpdump -i em1 -w /root/codel_sc1.em1.pcap >& tcpdump.em1.out & ; tcpdump -i em2 -w /root/codel_sc1.em2.pcap >& tcpdump.em2.out & ;
+
+ipfw pipe 1 config bw 1mbits/s codel
+ipfw add 100 pipe 1 from any to any
+
+ipfw pipe 1 config bw 10mbits/s
+
+sudo scp -P 3322 -p -i ~/.ssh/mptcprootkey root@192.168.56.1:*.siftr.log ./
+sudo scp -P 3322 -p -i ~/.ssh/mptcprootkey root@192.168.56.1:*.pcap ./
+sudo scp -P 3322 -p -i ~/.ssh/mptcprootkey root@192.168.56.1:*.out ./
+
+rm *.log; rm *.pcap; rm *.out;
+
+iperf3 -s --rcv-timeout 3600000 !!! Important to resolve idle timeout error on server side
+
+
+(csh l4s1_ecn.sh; csh l4s2_ecn.sh; csh l4s1_noecn.sh; csh l4s2_noecn.sh) > l4sterminaloutput.txt
+git checkout --force origin/FQ-PIE-6flows
+
+
+Shyamesh@098
+
+sudo sysctl net.ipv4.tcp_congestion_control=bbr
+
+sudo sysctl net.ipv4.tcp_congestion_control=pcc
+
+sudo sysctl net.ipv4.tcp_available_congestion_control
+
+C:\Users\deols\OneDrive\Desktop\Personal\Ent\Download\iperf3.17_64\iperf3.exe -s -p 7575
+
+C:\Users\deols\OneDrive\Desktop\Personal\Ent\Download\iperf3.17_64\iperf3.exe -s -p 3001
+
+Cubic_RED_254_BBR_GREEN_248
