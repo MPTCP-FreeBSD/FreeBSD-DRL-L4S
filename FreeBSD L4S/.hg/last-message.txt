@@ -1,2 +1,0 @@
-Added script to fetch kernel binary and copy and install onto test hosts
-
