@@ -118,8 +118,8 @@ make buildworld
 ```
 Build and install the kernel:
 ```bash
-make buildkernel -j2 -DKERNFAST KERNCONF=MYKERNEL
-make installkernel -j2 -DKERNFAST KERNCONF=MYKERNEL
+make buildkernel -j4 -DKERNFAST KERNCONF=L4SKERNEL
+make installkernel -j4 -DKERNFAST KERNCONF=L4SKERNEL
 shutdown -r now
 ```
 Install the world:
