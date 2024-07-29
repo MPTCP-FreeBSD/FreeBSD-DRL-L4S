@@ -54,7 +54,7 @@ Libraries required:
 
 - Shiva Pokhrel <shiva.pokhrel@deakin.edu.au>
 - Jonathan Kua <jonathan.kua@deakin.edu.au>
-- Deol Satish <dsatish@deakin.edu.au>
+- Deol Satish <deol.satish@deakin.edu.au>
 
 ## References
 
